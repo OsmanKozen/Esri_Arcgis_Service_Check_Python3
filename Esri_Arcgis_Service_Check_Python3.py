@@ -25,7 +25,7 @@ def main(argv=None):
     conRepoZeka = cx_Oracle.connect('User/pass@TNS', encoding="UTF-8",nencoding="UTF-8")
     curRepoZeka = conRepoZeka.cursor()
 
-    arcgis_drop_sql = "Truncate table NQMADMIN.ARCGIS_SERVICE_CHECK"
+    arcgis_drop_sql = "Truncate table ARCGIS_SERVICE_CHECK"
     curRepoZeka.execute(arcgis_drop_sql)
     conRepoZeka.commit()
 
